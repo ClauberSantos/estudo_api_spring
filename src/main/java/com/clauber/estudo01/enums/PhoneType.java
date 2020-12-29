@@ -1,11 +1,9 @@
 package com.clauber.estudo01.enums;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 
 @Getter
-@AllArgsConstructor
 public enum PhoneType {
 
     HOME("Home"),
@@ -16,6 +14,6 @@ public enum PhoneType {
         this.description = description;
     }
 
-    private String description;
+    private final String description;
 
 }
